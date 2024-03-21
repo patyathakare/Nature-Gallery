@@ -1,0 +1,76 @@
+/* by default all */
+*{
+    margin:0px;
+    padding:0px;
+}
+
+/* navigation bar  id-> navigation-bar*/
+#navigation-bar {
+    display: flex;
+justify-content: space-between;
+padding:5px;
+align-items: center;
+position: relative;
+
+}
+
+#navigation-bar::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    top:0px;
+    left:0px;
+    opacity: 0.2;
+}
+
+#navigation-bar #logo {
+margin-left: 20px;
+
+}
+
+#navigation-bar #logo h2{
+    color: orange;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+
+}
+
+#navigation-bar #logo h2:hover{
+    color: crimson;
+    cursor: pointer;
+}
+
+#navigation-bar #logo img{
+    height: 70px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+}
+
+#home-info-container{
+    height: 60vh;
+    
+}
+
+#home-info-container::before{
+    content: "";
+    position:absolute;
+    background: url("../bg-imgs/bg-home.jpg") no-repeat center center/cover;
+    height:100% ;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -2;
+    
+}
+
+.btn{
+    padding:2px 10px;
+    margin: 8px;
+    cursor: pointer;
+   
+}
